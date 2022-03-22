@@ -1,0 +1,24 @@
+﻿<Window x:Class="T_MinecraftLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T_MinecraftLauncher"
+        mc:Ignorable="d"
+        Title="T-MCL" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/316-1F510150953.jpg"/>
+        </Grid.Background>
+        <ComboBox x:Name="comboBox1" DisplayMemberPath="Id" HorizontalAlignment="Left" Margin="640,36,0,0" VerticalAlignment="Top" Width="120" Opacity="0.5"/>
+        <Button x:Name="Button" Content="启动游戏" HorizontalAlignment="Left" Margin="640,363,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click" Opacity="0.5"/>
+        <TextBox x:Name="javapath" HorizontalAlignment="Left" Margin="35,363,0,0" TextWrapping="Wrap" Text="填入javaw.exe路径" VerticalAlignment="Top" Width="470" Height="21"  Opacity="0.5"/>
+        <TextBox x:Name="youxiang" HorizontalAlignment="Left" Margin="35,36,0,0" TextWrapping="Wrap" Text="邮箱" VerticalAlignment="Top" Width="120" Opacity="0.5"/>
+        <TextBox x:Name="mima" HorizontalAlignment="Left" Margin="35,60,0,0" TextWrapping="Wrap" Text="密码" VerticalAlignment="Top" Width="120" Opacity="0.5"/>
+        <CheckBox x:Name="zb" Content="正版验证" HorizontalAlignment="Left" Margin="35,84,0,0" VerticalAlignment="Top" Opacity="0.5"/>
+        <TextBox x:Name="MemoryTextbox" HorizontalAlignment="Left" Margin="575,363,0,0" TextWrapping="Wrap" Text="最大内存" VerticalAlignment="Top" Width="60" Height="21" Opacity="0.5"/>
+        <TextBox x:Name="minMemoryTextbox" HorizontalAlignment="Left" Margin="510,363,0,0" TextWrapping="Wrap" Text="最小内存" VerticalAlignment="Top" Width="60" Height="21" Opacity="0.5"/>
+        <TextBox x:Name="IdTextbox" HorizontalAlignment="Left" Margin="640,339,0,0" TextWrapping="Wrap" Text="离线登录" VerticalAlignment="Top" Width="120" Opacity="0.5"/>
+
+    </Grid>
+</Window>
