@@ -12,13 +12,44 @@
         </Grid.Background>
         <ComboBox x:Name="comboBox1" DisplayMemberPath="Id" HorizontalAlignment="Left" Margin="640,36,0,0" VerticalAlignment="Top" Width="120" Opacity="0.5"/>
         <Button x:Name="Button" Content="启动游戏" HorizontalAlignment="Left" Margin="640,363,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click" Opacity="0.5"/>
-        <TextBox x:Name="javapath" HorizontalAlignment="Left" Margin="35,363,0,0" TextWrapping="Wrap" Text="填入javaw.exe路径" VerticalAlignment="Top" Width="470" Height="21"  Opacity="0.5"/>
-        <TextBox x:Name="youxiang" HorizontalAlignment="Left" Margin="35,36,0,0" TextWrapping="Wrap" Text="邮箱" VerticalAlignment="Top" Width="120" Opacity="0.5"/>
-        <TextBox x:Name="mima" HorizontalAlignment="Left" Margin="35,60,0,0" TextWrapping="Wrap" Text="密码" VerticalAlignment="Top" Width="120" Opacity="0.5"/>
-        <CheckBox x:Name="zb" Content="正版验证" HorizontalAlignment="Left" Margin="35,84,0,0" VerticalAlignment="Top" Opacity="0.5"/>
-        <TextBox x:Name="MemoryTextbox" HorizontalAlignment="Left" Margin="575,363,0,0" TextWrapping="Wrap" Text="最大内存" VerticalAlignment="Top" Width="60" Height="21" Opacity="0.5"/>
-        <TextBox x:Name="minMemoryTextbox" HorizontalAlignment="Left" Margin="510,363,0,0" TextWrapping="Wrap" Text="最小内存" VerticalAlignment="Top" Width="60" Height="21" Opacity="0.5"/>
-        <TextBox x:Name="IdTextbox" HorizontalAlignment="Left" Margin="640,339,0,0" TextWrapping="Wrap" Text="离线登录" VerticalAlignment="Top" Width="120" Opacity="0.5"/>
+        <TextBox x:Name="javapath" HorizontalAlignment="Left" Margin="30,363,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="475" Height="21"  Opacity="0.5"/>
+        <TextBox x:Name="youxiang" HorizontalAlignment="Left" Margin="65,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Opacity="0.5"/>
+        <CheckBox x:Name="zb" Content="" HorizontalAlignment="Left" Margin="64,86,0,0" VerticalAlignment="Top" Opacity="0.5" Width="15" RenderTransformOrigin="0.5,0.5">
+            <CheckBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="1.123"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.147"/>
+                </TransformGroup>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+        <TextBox x:Name="MemoryTextbox" HorizontalAlignment="Left" Margin="575,363,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Height="21" Opacity="0.5"/>
+        <TextBox x:Name="minMemoryTextbox" HorizontalAlignment="Left" Margin="510,363,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Height="21" Opacity="0.5"/>
+        <TextBox x:Name="IdTextbox" HorizontalAlignment="Left" Margin="640,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Opacity="0.5"/>
+        <TextBlock HorizontalAlignment="Left" Height="19" Margin="30,40,0,0" TextWrapping="Wrap" Text="邮箱" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.571,0.447" Foreground="White" Opacity="0.5"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,65,0,0" TextWrapping="Wrap" Text="密码" VerticalAlignment="Top" Width="35" Height="18" Foreground="White" Opacity="0.5"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,83,0,0" TextWrapping="Wrap" Text="正版" VerticalAlignment="Top" Foreground="White" Opacity="0.5"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,389,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Opacity="0.51"><Run Language="zh-cn" Text="Java路径"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="510,389,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="60" Foreground="White" Opacity="0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform><Run Language="zh-cn" Text="最小内存"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="575,389,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Foreground="White" Width="60" Opacity="0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform><Run Language="zh-cn" Text="最大内存"/></TextBlock>
+        <PasswordBox x:Name="mima" HorizontalAlignment="Left" Margin="65,64,0,0" VerticalAlignment="Top" Width="120" Opacity="0.5"/>
 
     </Grid>
 </Window>

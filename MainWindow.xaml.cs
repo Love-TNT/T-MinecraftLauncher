@@ -32,20 +32,20 @@ namespace T_MinecraftLauncher
         {
             try
             {
-                Core.JavaPath = @"javapath.Text";
+                Core.JavaPath = javapath.Text;
                 var ver = (KMCCC.Launcher.Version)comboBox1.SelectedItem;
                 LaunchOptions options = new LaunchOptions
                 {
-                    Version = ver, //Ver为Versions里你要启动的版本名字
-                    MaxMemory = Convert.ToInt32(MemoryTextbox.Text), //最大内存，int类型
+                    Version = ver, //获取版本
+                    MaxMemory = Convert.ToInt32(MemoryTextbox.Text), //最大内存
                     MinMemory = Convert.ToInt32(minMemoryTextbox.Text),
-                    //Authenticator = new OfflineAuthenticator(IdTextbox.Text), //离线启动，ZhaiSoul那儿为你要设置的游戏名
-                    Mode = LaunchMode.MCLauncher, //启动模式，这个我会在后面解释有哪几种
-                    Size = new WindowSize { Height = 768, Width = 1280 } //设置窗口大小，可以不要
+                    //Authenticator = new OfflineAuthenticator(IdTextbox.Text), //离线启动old
+                    Mode = LaunchMode.BmclMode , //启动模式
+                    Size = new WindowSize { Height = 768, Width = 1280 } //设置窗口大小
                 };
                 if ((bool)zb.IsChecked)
                 {
-                    options.Authenticator = new YggdrasilLogin(youxiang.Text, mima.Text, false);
+                    options.Authenticator = new YggdrasilLogin(youxiang.Text, mima.Password , false);
                 }
                 else
                 {
@@ -60,16 +60,16 @@ namespace T_MinecraftLauncher
                     switch (result.ErrorType)
                     {
                         case ErrorType.AuthenticationFailed:
-                            MessageBox.Show(this, "正版验证失败！请检查你的账号密码", "账号错误\n详细信息：" + result.ErrorMessage);
+                            MessageBox.Show(this, "正版验证失败！请检查你的账号密码", "账号错误\n详细信息：s" + result.ErrorMessage);
                             break;
                         case ErrorType.NoJAVA:
-                            MessageBox.Show(result.ErrorMessage + "你没有java哦");
+                            MessageBox.Show(result.ErrorMessage);
                             break;
                         case ErrorType.UncompressingFailed:
-                            MessageBox.Show(result.ErrorMessage + "文件损坏了呢");
+                            MessageBox.Show(result.ErrorMessage);
                             break;
                         default:
-                            MessageBox.Show(result.ErrorMessage + "启动错误");
+                            MessageBox.Show(result.ErrorMessage);
                             break;
                     }
                 }
@@ -83,7 +83,7 @@ namespace T_MinecraftLauncher
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Core.JavaPath = @"javapath.Text";
+            Core.JavaPath = javapath.Text;
             gamestart();
         }
 

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\启动器\T-MinecraftLauncher\T-MCL\obj\Debug\
+F:\启动器\T-MCL\T-MinecraftLauncher\obj\Debug\
 T_MinecraftLauncher
 none
 false
 DEBUG;TRACE
-F:\启动器\T-MinecraftLauncher\T-MCL\App.xaml
+F:\启动器\T-MCL\T-MinecraftLauncher\App.xaml
 1219584333
 
-6-502434485
+51579654133
 14-707342495
 MainWindow.xaml;
 
-True
+False
 
